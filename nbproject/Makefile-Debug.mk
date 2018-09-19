@@ -52,7 +52,7 @@ FFLAGS=
 ASFLAGS=
 
 # Link Libraries and Options
-LDLIBSOPTIONS=-lpthread `pkg-config --libs libcrypto` `pkg-config --libs openssl` -lboost_atomic -lboost_chrono -lboost_context -lboost_coroutine -lboost_date_time -lboost_filesystem -lboost_graph -lboost_iostreams -lboost_locale -lboost_log -lboost_log_setup -lboost_math_c99 -lboost_math_c99f -lboost_math_c99l -lboost_math_tr1 -lboost_math_tr1f -lboost_math_tr1l -lboost_prg_exec_monitor -lboost_program_options -lboost_random -lboost_regex -lboost_serialization -lboost_signals -lboost_system -lboost_thread -lboost_timer -lboost_unit_test_framework -lboost_wave -lboost_wserialization ../lib/libVision.so  
+LDLIBSOPTIONS=-lpthread -lboost_atomic -lboost_chrono -lboost_context -lboost_coroutine -lboost_date_time -lboost_filesystem -lboost_graph -lboost_iostreams -lboost_locale -lboost_log -lboost_log_setup -lboost_math_c99 -lboost_math_c99f -lboost_math_c99l -lboost_math_tr1 -lboost_math_tr1f -lboost_math_tr1l -lboost_prg_exec_monitor -lboost_program_options -lboost_random -lboost_regex -lboost_serialization -lboost_signals -lboost_system -lboost_thread -lboost_timer -lboost_unit_test_framework -lboost_wave -lboost_wserialization ../lib/libVision.so ../lib/libObject.so
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
@@ -65,7 +65,7 @@ LDLIBSOPTIONS=-lpthread `pkg-config --libs libcrypto` `pkg-config --libs openssl
 ${OBJECTDIR}/WebSocket.o: WebSocket.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g `pkg-config --cflags libcrypto` `pkg-config --cflags openssl` -std=c++11  -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/WebSocket.o WebSocket.cpp
+	$(COMPILE.cc) -g -std=c++11 -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/WebSocket.o WebSocket.cpp
 
 # Subprojects
 .build-subprojects:

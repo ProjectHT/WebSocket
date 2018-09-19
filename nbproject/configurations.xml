@@ -53,8 +53,6 @@
           <output>../lib/libWebSocket.${CND_DLIB_EXT}</output>
           <linkerLibItems>
             <linkerLibStdlibItem>PosixThreads</linkerLibStdlibItem>
-            <linkerOptionItem>`pkg-config --libs libcrypto`</linkerOptionItem>
-            <linkerOptionItem>`pkg-config --libs openssl`</linkerOptionItem>
             <linkerLibLibItem>boost_atomic</linkerLibLibItem>
             <linkerLibLibItem>boost_chrono</linkerLibLibItem>
             <linkerLibLibItem>boost_context</linkerLibLibItem>
@@ -85,6 +83,7 @@
             <linkerLibLibItem>boost_wave</linkerLibLibItem>
             <linkerLibLibItem>boost_wserialization</linkerLibLibItem>
             <linkerOptionItem>../lib/libVision.so</linkerOptionItem>
+            <linkerOptionItem>../lib/libObject.so</linkerOptionItem>
           </linkerLibItems>
         </linkerTool>
       </compileType>
