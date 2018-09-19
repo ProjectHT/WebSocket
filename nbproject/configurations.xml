@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>WebSocket.h</itemPath>
+      <itemPath>client_ws.hpp</itemPath>
+      <itemPath>client_wss.hpp</itemPath>
+      <itemPath>crypto.hpp</itemPath>
+      <itemPath>server_ws.hpp</itemPath>
+      <itemPath>server_wss.hpp</itemPath>
+      <itemPath>status_code.hpp</itemPath>
+      <itemPath>utility.hpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>WebSocket.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="2">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <standard>10</standard>
+        </cTool>
+        <ccTool>
+          <standard>8</standard>
+        </ccTool>
+        <linkerTool>
+          <output>../lib/libWebSocket.${CND_DLIB_EXT}</output>
+          <linkerLibItems>
+            <linkerLibStdlibItem>PosixThreads</linkerLibStdlibItem>
+            <linkerOptionItem>`pkg-config --libs libcrypto`</linkerOptionItem>
+            <linkerOptionItem>`pkg-config --libs openssl`</linkerOptionItem>
+            <linkerLibLibItem>boost_atomic</linkerLibLibItem>
+            <linkerLibLibItem>boost_chrono</linkerLibLibItem>
+            <linkerLibLibItem>boost_context</linkerLibLibItem>
+            <linkerLibLibItem>boost_coroutine</linkerLibLibItem>
+            <linkerLibLibItem>boost_date_time</linkerLibLibItem>
+            <linkerLibLibItem>boost_filesystem</linkerLibLibItem>
+            <linkerLibLibItem>boost_graph</linkerLibLibItem>
+            <linkerLibLibItem>boost_iostreams</linkerLibLibItem>
+            <linkerLibLibItem>boost_locale</linkerLibLibItem>
+            <linkerLibLibItem>boost_log</linkerLibLibItem>
+            <linkerLibLibItem>boost_log_setup</linkerLibLibItem>
+            <linkerLibLibItem>boost_math_c99</linkerLibLibItem>
+            <linkerLibLibItem>boost_math_c99f</linkerLibLibItem>
+            <linkerLibLibItem>boost_math_c99l</linkerLibLibItem>
+            <linkerLibLibItem>boost_math_tr1</linkerLibLibItem>
+            <linkerLibLibItem>boost_math_tr1f</linkerLibLibItem>
+            <linkerLibLibItem>boost_math_tr1l</linkerLibLibItem>
+            <linkerLibLibItem>boost_prg_exec_monitor</linkerLibLibItem>
+            <linkerLibLibItem>boost_program_options</linkerLibLibItem>
+            <linkerLibLibItem>boost_random</linkerLibLibItem>
+            <linkerLibLibItem>boost_regex</linkerLibLibItem>
+            <linkerLibLibItem>boost_serialization</linkerLibLibItem>
+            <linkerLibLibItem>boost_signals</linkerLibLibItem>
+            <linkerLibLibItem>boost_system</linkerLibLibItem>
+            <linkerLibLibItem>boost_thread</linkerLibLibItem>
+            <linkerLibLibItem>boost_timer</linkerLibLibItem>
+            <linkerLibLibItem>boost_unit_test_framework</linkerLibLibItem>
+            <linkerLibLibItem>boost_wave</linkerLibLibItem>
+            <linkerLibLibItem>boost_wserialization</linkerLibLibItem>
+            <linkerOptionItem>../lib/libVision.so</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="WebSocket.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="WebSocket.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="client_ws.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="client_wss.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="crypto.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="server_ws.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="server_wss.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="status_code.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="utility.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="2">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="WebSocket.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="WebSocket.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="client_ws.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="client_wss.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="crypto.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="server_ws.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="server_wss.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="status_code.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="utility.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
